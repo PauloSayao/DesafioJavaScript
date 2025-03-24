@@ -32,7 +32,12 @@ class Carousel {
         }
     }    
     static Next(){
-        
+        document.querySelectorAll('#carousel a').forEach(element => {
+            element.style.display = 'none'
+        });
+        document.querySelectorAll('#carousel-title a').forEach(element => {
+            element.style.display = 'none'
+        });
     }
     static addDiv() {
         for (let i = 0; i < Carousel._size; i++) {
