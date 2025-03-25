@@ -32,15 +32,15 @@
     <main>
         <div id="carousel">
         </div>
-        <div id="carousel-title">
+        <div id="carousel-title" >
         </div>
         <script>
-
-            carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
-            carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
-            carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
-            Carousel.Start(carouselArr);
-        </script>
+            //insert each image on carousel
+           carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
+           carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
+           carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
+           Carousel.Start(carouselArr);
+       </script>
     </main>
     <footer>
         <nav id="social">
@@ -57,27 +57,3 @@
     </footer>    
 </body>
 </html>
-<!-- static Next(){
-    
-    document.querySelectorAll('#carousel a').forEach(element => {
-        element.style.display = 'none';
-    });
-
-    document.querySelectorAll('#carousel-title a').forEach(element => {
-        element.style.display = 'none';
-    });
-
-    document.querySelector(`#carousel a:nth-child(${Carousel._sequence+1})`).style.display = 'inline';
-    document.querySelector(`#carousel-title a:nth-child(${Carousel._sequence+1})`).style.display = 'inline';
-
-    (Carousel._sequence >= Carousel._size-1) ? Carousel._sequence = 0 : Carousel._sequence++;
-    
-    // console.log(Carousel._sequence)
-    
-    // if (Carousel._sequence >= Carousel._size-1){
-    //     Carousel._sequence = 0;
-    // } else {
-    //     Carousel._sequence++;
-    // }
-
-} -->
